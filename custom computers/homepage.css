@@ -1,0 +1,259 @@
+/* General styles */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    background-image: linear-gradient(to right, grey 0%, blue 60%);
+  }
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slides img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .controls {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .controls button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  /* Hero section */
+  
+  .hero {
+    display: flex;
+    height: 500px;
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .hero-image {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+  }
+  
+  .hero-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    color:grey;
+  }
+  
+  .hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 20px;
+  }
+  
+  /* Services section */
+  
+  .services {
+    padding: 50px;
+  }
+  
+  .services h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .services .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .services .service-card {
+    animation: fade-in-grow 1s ease-in-out forwards;
+  }
+  
+ 
+.services .service-card {
+  animation: fade-in-grow 1s ease-in-out forwards;
+}
+
+@keyframes fade-in-grow {
+  0% {
+    opacity: 0.5;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+  
+  
+  .services .service-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color:red;
+    text-align: center;
+    
+  }
+  
+  .services .service-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .services .service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .service-card.animate {
+    animation: fade-in 1s ease-in-out forwards;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 2;
+    }
+  }
+  
+  /* About section */
+  
+  .about {
+    padding: 50px;
+  }
+  
+  .about h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* CTA section */
+  
+  .cta {
+    padding: 50px;
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+  }
+  
+  .cta h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .cta p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  
+ 
+  
+  
+  /* Footer */
+  
+  /* Footer */
+
+  .footer {
+    background-image: linear-gradient(to right, grey 0%, blue 60%);
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-nav ul li {
+    text-align: center;
+  }
+  
+  .footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-copyright p {
+    margin: 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .footer-copyright, .footer-social, .footer-nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .footer-copyright p {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .footer-social li, .footer-nav li {
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+  }
+  
+  .footer-social li a, .footer-nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .footer-social li a:hover, .footer-nav li a:hover {
+    text-decoration: underline;
+  }
+  
